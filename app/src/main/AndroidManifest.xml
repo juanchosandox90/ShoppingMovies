@@ -16,7 +16,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
-        <activity android:name=".MoviesActivity">
+        <activity android:name=".ui.movieslist.MoviesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

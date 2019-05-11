@@ -6,7 +6,7 @@
         android:title="@string/discover_menu" />
 
     <item
-        android:id="@+id/action_favorites"
+        android:id="@+id/action_shopping"
         android:icon="@drawable/ic_add_shopping_cart_black_24dp"
         android:title="@string/shopping_menu" />
 </menu>
