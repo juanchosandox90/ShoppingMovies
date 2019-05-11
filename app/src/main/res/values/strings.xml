@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ShoppingMovies</string>
+    <string name="discover_menu">Discover</string>
+    <string name="shopping_menu">Shopping</string>
 </resources>
