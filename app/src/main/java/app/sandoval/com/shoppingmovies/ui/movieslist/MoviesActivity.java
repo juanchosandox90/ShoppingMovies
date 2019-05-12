@@ -11,6 +11,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import app.sandoval.com.shoppingmovies.R;
 import app.sandoval.com.shoppingmovies.ui.movieslist.discover.DiscoverMoviesFragment;
+import app.sandoval.com.shoppingmovies.ui.movieslist.shopping.ShoppingFragment;
 import app.sandoval.com.shoppingmovies.utils.ActivityUtils;
 
 public class MoviesActivity extends AppCompatActivity {
@@ -39,11 +40,17 @@ public class MoviesActivity extends AppCompatActivity {
         bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                if (menuItem.getItemId() == R.id.action_discover) {
-                    ActivityUtils.replaceFragmentInActivity(
-                            getSupportFragmentManager(), DiscoverMoviesFragment.newInstance(),
-                            R.id.fragment_container);
-                    return true;
+                switch (menuItem.getItemId()) {
+                    case R.id.action_discover:
+                        ActivityUtils.replaceFragmentInActivity(
+                                getSupportFragmentManager(), DiscoverMoviesFragment.newInstance(),
+                                R.id.fragment_container);
+                        return true;
+                    case R.id.action_shopping:
+                        ActivityUtils.replaceFragmentInActivity(
+                                getSupportFragmentManager(), ShoppingFragment.newInstance(),
+                                R.id.fragment_container);
+                        return true;
                 }
                 return false;
             }
