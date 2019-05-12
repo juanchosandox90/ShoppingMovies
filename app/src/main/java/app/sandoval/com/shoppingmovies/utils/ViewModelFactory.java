@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import app.sandoval.com.shoppingmovies.data.MovieRepository;
 import app.sandoval.com.shoppingmovies.ui.movieslist.discover.DiscoverMoviesViewModel;
+import app.sandoval.com.shoppingmovies.ui.movieslist.shopping.ShoppingViewModel;
 
 public class ViewModelFactory implements ViewModelProvider.Factory {
 
@@ -25,6 +26,9 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
         if (modelClass.isAssignableFrom(DiscoverMoviesViewModel.class)) {
             //noinspection unchecked
             return (T) new DiscoverMoviesViewModel(repository);
+        } else if (modelClass.isAssignableFrom(ShoppingViewModel.class)) {
+            //noinspection unchecked
+            return (T) new ShoppingViewModel(repository);
         }
         throw new IllegalArgumentException("Unknown ViewModel class: " + modelClass.getName());
     }
