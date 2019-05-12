@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    app:statusBarBackground="@color/colorPrimaryDark"
+    app:statusBarBackground="@color/md_pink_700"
     tools:context=".ui.movieslist.MoviesActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -21,9 +21,11 @@
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
+        android:background="@color/md_white_1000"
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"
-        android:clipToPadding="false" />
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -35,12 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"
+            android:background="@color/md_pink_700"
             app:elevation="4dp"
             app:itemIconTint="@color/bottom_nav_item_colors"
             app:itemTextColor="@color/bottom_nav_item_colors"
             app:menu="@menu/bottom_navigation" />
-
     </FrameLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
