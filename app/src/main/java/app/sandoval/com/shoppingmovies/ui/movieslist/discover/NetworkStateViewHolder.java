@@ -10,6 +10,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import app.sandoval.com.shoppingmovies.data.local.model.Resource;
 import app.sandoval.com.shoppingmovies.databinding.ItemNetworkStateBinding;
 
+/**
+ * A View Holder that can display a loading or have click action.
+ * It is used to show the network state of paging.
+ */
+
 public class NetworkStateViewHolder extends RecyclerView.ViewHolder {
 
     private ItemNetworkStateBinding binding;

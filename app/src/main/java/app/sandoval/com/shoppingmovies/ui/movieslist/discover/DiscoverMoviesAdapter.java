@@ -12,6 +12,10 @@ import app.sandoval.com.shoppingmovies.data.local.model.Movie;
 import app.sandoval.com.shoppingmovies.data.local.model.Resource;
 import app.sandoval.com.shoppingmovies.ui.movieslist.MovieViewHolder;
 
+/**
+ * Adapter implementation that shows a list of Movie posters
+ */
+
 public class DiscoverMoviesAdapter extends PagedListAdapter<Movie, RecyclerView.ViewHolder> {
 
     private DiscoverMoviesViewModel mViewModel;

@@ -1,6 +1,8 @@
 package app.sandoval.com.shoppingmovies.ui.movieslist;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -8,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import app.sandoval.com.shoppingmovies.data.local.model.Movie;
 import app.sandoval.com.shoppingmovies.databinding.ItemMovieBinding;
+import app.sandoval.com.shoppingmovies.ui.moviedetails.DetailsActivity;
 
 public class MovieViewHolder extends RecyclerView.ViewHolder {
 
@@ -22,6 +25,14 @@ public class MovieViewHolder extends RecyclerView.ViewHolder {
     public void bindTo(final Movie movie) {
         binding.setMovie(movie);
         // movie click event
+        binding.getRoot().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), DetailsActivity.class);
+                intent.putExtra(DetailsActivity.EXTRA_MOVIE_ID, movie.getId());
+                view.getContext().startActivity(intent);
+            }
+        });
         binding.executePendingBindings();
     }
 

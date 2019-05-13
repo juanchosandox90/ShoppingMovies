@@ -17,6 +17,10 @@ import app.sandoval.com.shoppingmovies.ui.movieslist.MoviesFilterType;
 import app.sandoval.com.shoppingmovies.utils.AppExecutors;
 import timber.log.Timber;
 
+/**
+ * Repository implementation that returns a paginated data and loads data directly from network.
+ */
+
 public class MovieRepository implements DataSource {
 
     private static volatile MovieRepository sInstance;
@@ -113,7 +117,7 @@ public class MovieRepository implements DataSource {
             @Override
             public void run() {
                 Timber.d("Removing movie from Shopping");
-                mLocalDataSource.unShopMovie( movie);
+                mLocalDataSource.unShopMovie(movie);
             }
         });
     }

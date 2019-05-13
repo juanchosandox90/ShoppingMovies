@@ -9,6 +9,10 @@ import app.sandoval.com.shoppingmovies.data.remote.MoviesRemoteDataSource;
 import app.sandoval.com.shoppingmovies.data.remote.api.ApiClient;
 import app.sandoval.com.shoppingmovies.data.remote.api.MovieService;
 
+/**
+ * Class that handles object creation.
+ */
+
 public class Injection {
 
     /**

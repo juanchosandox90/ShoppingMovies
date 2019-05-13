@@ -12,6 +12,15 @@ import app.sandoval.com.shoppingmovies.data.local.model.Resource;
 import app.sandoval.com.shoppingmovies.data.remote.api.ApiResponse;
 import app.sandoval.com.shoppingmovies.utils.AppExecutors;
 
+/**
+ * A generic class that can provide a resource backed by both the sqlite database and the network.
+ * You can read more about it in the [Architecture Guide]
+ * (https://developer.android.com/jetpack/docs/guide#addendum).
+ *
+ * @param <ResultType>
+ * @param <RequestType> </RequestType></ResultType>
+ */
+
 public abstract class NetworkBoundResource<ResultType, RequestType> {
 
     /**
