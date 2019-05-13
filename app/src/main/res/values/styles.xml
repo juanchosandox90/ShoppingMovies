@@ -1,11 +1,35 @@
 <resources>
 
+    <style name="AppTheme" parent="BaseTheme" />
+
+    <style name="AppThemeLight" parent="BaseTheme.Light" />
+
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BaseTheme" parent="Theme.MaterialComponents.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/md_white_1000</item>
+        <item name="colorPrimaryDark">@color/md_white_1000</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Light theme. -->
+    <style name="BaseTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_white_1000</item>
+        <item name="colorPrimaryDark">@color/md_white_1000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Toolbar-->
+    <style name="AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/primaryText</item>
+        <item name="android:textColorSecondary">@color/primaryText</item>
+    </style>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
+
+    <style name="Label" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/primaryText</item>
     </style>
 
 </resources>
