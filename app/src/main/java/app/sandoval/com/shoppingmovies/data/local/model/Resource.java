@@ -5,6 +5,12 @@ import androidx.annotation.Nullable;
 
 import java.util.Objects;
 
+/**
+ * A generic class that contains data and status about loading this data.
+ * You can read more about it in the [Architecture Guide]
+ * (https://developer.android.com/jetpack/docs/guide#addendum).
+ */
+
 public class Resource<T> {
 
     @NonNull

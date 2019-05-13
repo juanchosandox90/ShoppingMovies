@@ -9,6 +9,10 @@ import app.sandoval.com.shoppingmovies.data.local.model.Movie;
 import app.sandoval.com.shoppingmovies.data.remote.api.MovieService;
 import app.sandoval.com.shoppingmovies.ui.movieslist.MoviesFilterType;
 
+/**
+ * A simple data source factory provides a way to observe the last created data source.
+ */
+
 public class MovieDataSourceFactory extends DataSource.Factory<Integer, Movie> {
 
     public MutableLiveData<MoviePageKeyedDataSource> sourceLiveData = new MutableLiveData<>();

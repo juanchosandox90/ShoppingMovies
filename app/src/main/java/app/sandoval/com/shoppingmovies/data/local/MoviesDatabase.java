@@ -17,6 +17,10 @@ import app.sandoval.com.shoppingmovies.data.local.model.Movie;
 import app.sandoval.com.shoppingmovies.data.local.model.Review;
 import app.sandoval.com.shoppingmovies.data.local.model.Trailer;
 
+/**
+ * The Room Database that manages a local database.
+ */
+
 @Database(
         entities = {Movie.class, Trailer.class, Cast.class, Review.class},
         version = 1,

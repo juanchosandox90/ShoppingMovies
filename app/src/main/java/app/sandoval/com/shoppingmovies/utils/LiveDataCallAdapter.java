@@ -11,6 +11,12 @@ import retrofit2.CallAdapter;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * A Retrofit adapterthat converts the Call into a LiveData of ApiResponse.
+ *
+ * @param <R>
+ */
+
 public class LiveDataCallAdapter<R> implements CallAdapter<R, LiveData<ApiResponse<R>>> {
 
     private final Type responseType;
