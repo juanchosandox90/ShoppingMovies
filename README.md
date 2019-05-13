@@ -1,6 +1,11 @@
 <h1 align="center">Shopping Movies</h1>
 <p align="center">
 </p>
+<h2 align="center">Screenshots</h2>
+<img src="Screenshot_20190512-194427_Shopping Movies.jpg" vspace="5" align= "left" width=275 >
+<img src="Screenshot_20190512-194500_Shopping Movies.jpg" vspace="5" align= "left" width=275 >
+<img src="Screenshot_20190512-194512_Shopping Movies.jpg" vspace="5" width=275>
+<img src="Screenshot_20190512-194523_Shopping Movies.jpg" vspace="5" width=275>
 
 ## Features
 *   Discover the most popular and the most rated movies
